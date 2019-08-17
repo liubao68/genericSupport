@@ -1,0 +1,22 @@
+# override common configurations in common module
+cse-config-order: 100
+
+service_description:
+  name: file-service-client
+
+cse:
+  rest:
+    address: 0.0.0.0:9092
+
+  uploads:
+    directory: tmp_for_upload_file
+
+  service:
+    registry:
+      address: http://10.211.224.103:30100
+      instance:
+        watch: false
+  config:
+    client:
+      serverUri: http://10.211.224.103:30113
+      refreshMode: 1
