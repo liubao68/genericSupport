@@ -13,10 +13,10 @@ cse:
 
   service:
     registry:
-      address: http://10.211.224.103:30100
+      address: http://localhost:30100
       instance:
         watch: false
   config:
     client:
-      serverUri: http://10.211.224.103:30113
+      serverUri: http://localhost:30113
       refreshMode: 1

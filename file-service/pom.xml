@@ -20,7 +20,7 @@
     </dependency>
   </dependencies>
   <properties>
-    <main.class>com.huawei.cse.porter.file.FileMain</main.class>
+    <main.class>com.huawei.cse.porter.file.FileMainClient</main.class>
   </properties>
   <build>
     <plugins>

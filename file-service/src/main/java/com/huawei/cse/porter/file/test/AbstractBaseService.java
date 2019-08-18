@@ -1,5 +1,7 @@
 package com.huawei.cse.porter.file.test;
 
+import java.util.List;
+
 public class AbstractBaseService<T extends AbstractBean> implements IBaseService<T> {
     private IBaseService<T> target;
 
@@ -8,12 +10,22 @@ public class AbstractBaseService<T extends AbstractBean> implements IBaseService
     }
 
     @Override
-    public T hello() {
-        return target.hello();
+    public T hello(T a) {
+        return target.hello(a);
     }
 
     @Override
-    public T[] helloBody() {
-        return target.helloBody();
+    public T[] helloBody(T[] a) {
+        return target.helloBody(a);
+    }
+
+    @Override
+    public List<T> helloList(List<T> a) {
+        return a;
+    }
+
+    @Override
+    public PersonBean actual() {
+        return target.actual() ;
     }
 }
